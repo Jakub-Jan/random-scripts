@@ -5,6 +5,8 @@ import time
 ################ vars ################
 DownloadsDir="/home/tayf/Downloads/"
 
+interval=10
+
 filter=[["Apps",".exe",".msi",".bin"],
 ["Archives",".zip",".rar",".tar",".bz2",".gz"],
 ["Pics",".jpg",".png",".svg",".drawio"],
@@ -58,4 +60,4 @@ create_downloads_folders(filter)
 while True:
     print("New loop")
     sort_downloads_content(filter,get_downloads_content())
-    time.sleep(10)
+    time.sleep(interval)

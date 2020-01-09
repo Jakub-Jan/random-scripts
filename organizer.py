@@ -5,14 +5,15 @@ import time
 ################ vars ################
 DownloadsDir="/home/tayf/Downloads/"
 
-filter=[["Archives",".zip",".rar"],
+filter=[["Apps",".exe",".msi",".bin"],
+["Archives",".zip",".rar",".tar",".bz2",".gz"],
 ["Pics",".jpg",".png",".svg",".drawio"],
 ["Torrents",".torrent"],
-["Docs",".pdf",".xlsx"],
+["Docs",".pdf",".xlsx",".docx",".ods",".csv",".rtf"],
 ["Media",".avi"],
 ["Subs",".srt"],
-["Etc",".txt",".xml",".sql",".kdbx",".key",],
-["ISO",".iso"],]
+["Etc",".txt",".xml",".sql",".kdbx",".key",".ino",".log",".cap",".crt",".ovpn",".py",".pcap",".conf"],
+["ISO",".iso",".img"],]
 
 ################ defs ################
 def get_downloads_content():
@@ -26,7 +27,7 @@ def sort_downloads_content(filter, content):
             continue
         else:
             for x in filter:
-                if os.path.splitext(fullpath)[1] in x:
+                if os.path.splitext(fullpath)[1].lower() in x:
                     newpath=DownloadsDir+x[0]+'/'+file
                     move_files(fullpath,newpath)
                     moved=True

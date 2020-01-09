@@ -53,6 +53,7 @@ def create_downloads_folders(filter):
 
 ################################################################
 create_downloads_folders(filter)
+
 while True:
     print("New loop")
     sort_downloads_content(filter,get_downloads_content())

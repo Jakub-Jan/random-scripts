@@ -5,13 +5,13 @@ import time
 ################ vars ################
 DownloadsDir="/home/tayf/Downloads/"
 
-filter=[["Archives",".zip"],
-["Pics",".jpg"],
+filter=[["Archives",".zip",".rar"],
+["Pics",".jpg",".png",".svg",".drawio"],
 ["Torrents",".torrent"],
-["Docs",".pdf"],
+["Docs",".pdf",".xlsx"],
 ["Media",".avi"],
 ["Subs",".srt"],
-["Etc",".txt"],
+["Etc",".txt",".xml",".sql",".kdbx",".key",],
 ["ISO",".iso"],]
 
 ################ defs ################

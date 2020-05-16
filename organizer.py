@@ -7,14 +7,14 @@ DownloadsDir="/home/tayf/Downloads/"
 
 interval=10
 
-filter=[["Apps",".exe",".msi",".bin"],
-["Archives",".zip",".rar",".tar",".bz2",".gz"],
-["Pics",".jpg",".png",".svg",".drawio"],
+filter=[["Apps",".exe",".msi",".bin",".deb"],
+["Archives",".zip",".rar",".tar",".bz2",".gz",".tgz"],
+["Pics",".jpg",".png",".svg",".drawio",".jpeg"],
 ["Torrents",".torrent"],
 ["Docs",".pdf",".xlsx",".docx",".ods",".csv",".rtf"],
 ["Media",".avi"],
 ["Subs",".srt"],
-["Etc",".txt",".xml",".sql",".kdbx",".key",".ino",".log",".cap",".crt",".ovpn",".py",".pcap",".conf"],
+["Etc",".txt",".xml",".sql",".kdbx",".key",".ino",".log",".cap",".crt",".ovpn",".py",".pcap",".conf",".css",".html"],
 ["ISO",".iso",".img"],]
 
 ################ defs ################
